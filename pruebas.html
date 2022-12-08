@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Peluche Landia | Pruebas</title>
+
+        <style>
+            .contenedor{
+                position:absolute;
+
+                width:100%;
+                height:100%;
+                top:0%;
+                left:0%;
+
+
+            }
+
+            .bloque{
+                width:20%;
+                height:40%;
+                background: #ff0000;
+                animation-name: moverse;
+                animation-duration: 4s ;
+                position: relative;
+                animation-direction: reverse;
+                animation-timing-function:linear;
+
+            }
+
+            @keyframes mover{
+                0%{background-position: 0% 50%;}
+                50%{background-position: 100% 50%;}
+                100%{background-position: 0% 50%;}
+            }
+
+            @keyframes moverse{
+                0%{background:#ff0000;
+                    left:0px;
+                    top:0px;
+                }
+                
+                25%{background:#00ffff;
+                    left:300px;
+                    top:0px;
+                }
+
+                50%{background:#aa55dddd;
+                    left:300px;
+                    top:300px;
+                }
+
+                75%{background:#010342;
+                    left:0px;
+                    top:300px;
+                }
+
+                100%{background:#ffffff;
+                    left:0;
+                    top:0px;
+                }
+
+            }
+
+            .transicion{
+                width:20%;
+                height:40%;
+                border-radius:100%;
+                background:#bab8b8;
+                animation-name:transicion_movimiento;
+                animation-duration:4s;
+                position:relative;
+                animation-direction: reverse;
+                margin-left: 40%;
+
+            }
+
+            body{
+                overflow-x: hidden;
+            }
+
+            @keyframes transicion_movimiento{
+                0%{background:#bab8b8;
+                    left:0px;
+                    top:0px;
+                    opacity: 50%;
+                }
+                
+
+
+                50%{background:#d1d1d1;
+                    left:1000px;
+                    top:0px;
+                }
+
+                75%{background:#e8e8e8;
+                    left:1000px;
+                    top:0px;
+                }
+
+                100%{background:#ffffff;
+                    left:1000px;
+                    top:0px;
+                }
+
+
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="transicion">
+
+            </div>
+        </div>
+
+
+    </body>
+</html>
